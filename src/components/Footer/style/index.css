@@ -1,0 +1,247 @@
+/* =========================
+  Footer Principal
+  ========================= */
+.footer {
+   margin-top: 107px;
+   background-color: #212121;
+   height: 542px;
+   padding: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+/* Conteúdo interno do footer */
+.footer__content {
+   display: flex;
+   flex-direction: row;
+   gap: 86px;
+   padding: 56px;
+}
+
+/* =========================
+  Títulos e textos
+  ========================= */
+.title {
+   color: #6D6D6D;
+}
+
+/* =========================
+  Seção de Parceiros
+  ========================= */
+.Parterns {
+   margin-top: 27px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 20px;
+}
+
+/* Grid de logos dos parceiros */
+.Parterns__grid {
+   display: grid;
+   grid-template-columns: repeat(2, 0.1fr);
+   gap: 33px;
+}
+
+/* Imagem padrão dos parceiros */
+.image {
+   width: 64px;
+   height: 64px;
+   border-radius: 80px;
+}
+
+/* Imagem personalizada de parceiro */
+.imagePersonalized {
+   width: 64px;
+   height: 64px;
+   background-color: #FFFFFF;
+   background-image: url("../../../assets/logo/logoC.jpg");
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   border-radius: 80px;
+}
+
+/* Imagem específica (ex: Interlupos) */
+.interlupos {
+   width: 64px;
+}
+
+/* =========================
+  Contatos: Email e Telefone
+  ========================= */
+.emailAndNumber {
+   margin-top: 10px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.emailLink,
+.numberLink {
+   text-decoration: none;
+}
+
+/* =========================
+  Redes Sociais
+  ========================= */
+.socialMedia {
+   display: flex;
+   flex-direction: row;
+   gap: 16px;
+   margin-top: 17px;
+}
+
+/* =========================
+  Seção Instituto
+  ========================= */
+.Instituto {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+/* Link sobre o footer */
+.sobreFooter {
+   margin-top: 10px;
+   text-decoration: none;
+}
+
+/* =========================
+  Newsletter
+  ========================= */
+.Newsletter {
+   margin-top: 279px;
+}
+
+/* Container do checkbox da newsletter */
+.newsletterCheckbox__container {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 36px;
+   margin-top: 10px;
+}
+
+/* Título da newsletter */
+.newsTitle {
+   margin-bottom: 27px;
+}
+
+/* =========================
+  Checkbox customizado
+  ========================= */
+/* Estilização geral do label */
+.custom-checkbox {
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+   font-family: sans-serif;
+   font-size: 16px;
+}
+
+/* Esconde o input padrão */
+.custom-checkbox input {
+   display: none;
+}
+
+/* Caixa visual do checkbox */
+.custom-checkbox .checkmark {
+   width: 14px;
+   height: 14px;
+   background-color: transparent;
+   border: 1px solid #6D6D6D;
+   border-radius: 80px;
+   position: relative;
+   margin-right: 8px;
+   transition: 0.2s;
+}
+
+/* Adiciona o "check" ✓ com pseudo-elemento */
+.custom-checkbox .checkmark::after {
+   content: "";
+   position: absolute;
+   display: none;
+   left: 1px;
+   top: 1px;
+   width: 10px;
+   height: 10px;
+   background-color: #FFFFFF;
+   border: 1px solid #FFFFFF;
+   border-radius: 80px;
+}
+
+/* Mostra o "check" quando estiver marcado */
+.custom-checkbox input:checked + .checkmark::after {
+   display: block;
+}
+
+/* Botão da newsletter */
+.newsletterButton {
+   background-color: #FFFFFF;
+   color: #212121;
+   border: none;
+   border-radius: 80px;
+   cursor: pointer;
+   font-size: 16px;
+   width: 142px;
+   height: 44px;
+}
+
+/* =========================
+  Responsividade (Mobile)
+  ========================= */
+@media screen and (max-width: 768px) {
+   .footer {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      padding: 40px 20px;
+   }
+
+   .footer__content {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      padding: 20px 0;
+   }
+
+   .Parterns__grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+   }
+
+   .Newsletter {
+      margin-top: 40px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .newsletterCheckbox__container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+   }
+
+   .newsletterButton {
+      width: 100%;
+      max-width: 200px;
+   }
+
+   .Instituto {
+      align-items: center;
+      text-align: center;
+   }
+
+   .emailAndNumber {
+      align-items: center;
+      text-align: center;
+   }
+
+   .socialMedia {
+      justify-content: center;
+   }
+}

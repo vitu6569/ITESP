@@ -1,0 +1,156 @@
+/* =========================
+  HEADER PRINCIPAL
+  ========================= */
+.header {
+  display: flex; 
+  justify-content: center;
+  position: fixed; /* Fixa o header no topo da tela */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Garante que fique acima de outros elementos */
+  background-color: white; /* Cor de fundo do header */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* =========================
+  CONTAINERS DO HEADER
+  ========================= */
+.container,
+.containerScrolled {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 1440px; /* Largura máxima do container */
+}
+
+/* =========================
+  MENU PRINCIPAL
+  ========================= */
+.containerMenu {
+  display: flex;
+  align-items: center;
+}
+
+/* =========================
+  LISTA DE NAVEGAÇÃO
+  ========================= */
+ul li {
+  display: inline; /* Itens do menu em linha */
+  position: relative; /* Necessário para dropdown */
+}
+
+ul li a {
+  display: block;
+  padding: 5px 10px;
+  color: #000000;
+  text-decoration: none;
+  text-align: start;
+}
+
+/* =========================
+  DROPDOWN DO MENU
+  ========================= */
+ul li ul.dropdown {
+  width: 200px;
+  background-color: #ffffff;
+  position: absolute;
+  text-align: left;
+  z-index: 999;
+  padding: 25px 0;
+  display: none; /* Esconde o dropdown por padrão */
+  border-radius: 10px;
+}
+
+ul li ul.dropdown li {
+  display: block; /* Itens do dropdown em coluna */
+}
+
+/* Hover para mostrar o dropdown */
+ul li:hover ul.dropdown {
+  display: block;
+}
+
+/* Hover nos links do menu */
+ul li a:hover {
+  background: #ffffff;
+}
+
+/* =========================
+  TEXTO DO MENU
+  ========================= */
+.textMenu {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 400;
+  color: #333333;
+}
+
+/* =========================
+  BOTÃO "APOIAR"
+  ========================= */
+.apoiar {
+  display: flex;
+  gap: 32px;
+  padding: 20px 25px;
+  text-align: center;
+}
+
+/* =========================
+  ÍCONE DO MENU MOBILE
+  ========================= */
+.mobileMenuIcon {
+  width: 54px;
+  height: 80px;
+  background-color: transparent;
+  border: none;
+}
+
+/* =========================
+  RESPONSIVIDADE (TELAS PEQUENAS)
+  ========================= */
+@media screen and (max-width: 768px) {
+  /* Ajusta o container para ocupar toda a largura */
+  .container,
+  .containerScrolled {
+   width: 100%;
+   padding: 10px;
+  }
+
+  /* Esconde o menu principal no mobile */
+  .containerMenu {
+   display: none;
+  }
+
+  /* Itens do menu em coluna no mobile */
+  ul li {
+   display: block;
+   margin-bottom: 10px;
+  }
+
+  ul li a {
+   padding: 10px;
+   font-size: 16px;
+  }
+
+  .textMenu {
+   font-size: 18px;
+  }
+
+  /* Ajusta o botão "Apoiar" para coluna */
+  .apoiar {
+   flex-direction: column;
+   align-items: center;
+   padding: 10px;
+  }
+
+  /* Header mobile: alinhamento dos itens */
+  .mobileHeader {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  }
+}

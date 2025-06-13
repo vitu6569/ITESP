@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+}
+.containerAbout {
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 53px;
+    align-items: start;
+    margin-top: 135px;
+}
+.titleContent {
+    font-size: 128px;
+}
+.textContent {
+    margin-left: 138px;
+}

@@ -1,0 +1,66 @@
+/* ===========================
+    Banner Feminino - Estilos
+    =========================== */
+
+/* Container principal do banner */
+.bannerF {
+     display: flex; /* Layout flexível */
+     justify-content: center; /* Centraliza horizontalmente */
+     align-items: center; /* Centraliza verticalmente */
+     gap: 52px; /* Espaço entre os elementos filhos */
+     height: 540px; /* Altura fixa do banner */
+     margin-top: 90px; /* Espaço superior */
+     background: linear-gradient(to left, #1c1c1c, #111111); /* Gradiente de fundo */
+}
+
+/* Imagem do banner feminino */
+.ImgBannerF {
+     width: 640px; /* Largura da imagem */
+     height: 420px; /* Altura da imagem */
+     border-top-left-radius: 40px; /* Arredonda canto superior esquerdo */
+     border-bottom-right-radius: 40px; /* Arredonda canto inferior direito */
+     background-image: url('../../../../assets/images/TimeFem.jpg'); /* Caminho da imagem */
+     background-size: cover; /* Cobre todo o espaço do elemento */
+     background-repeat: no-repeat; /* Não repete a imagem */
+}
+
+/* Utilitários de espaçamento */
+.marginBottom-1 {
+     margin-bottom: 38px; /* Espaçamento inferior maior */
+}
+
+.marginBottom-2 {
+     margin-bottom: 21px; /* Espaçamento inferior menor */
+}
+
+/* ===========================
+    Responsividade (até 768px)
+    =========================== */
+@media screen and (max-width: 768px) {
+     .bannerF {
+          display: flex;
+          flex-direction: column; /* Empilha os elementos verticalmente */
+          height: auto; /* Altura automática */
+          padding: 0 20px 20px; /* Espaçamento interno */
+          background: linear-gradient(to bottom, #1c1c1c, #111111); /* Gradiente ajustado */
+     }
+
+     .ImgBannerF {
+          width: 800px; /* Largura maior para mobile */
+          height: 285px; /* Altura reduzida */
+          border-top-left-radius: 0; /* Remove arredondamento */
+          border-bottom-right-radius: 0; /* Remove arredondamento */
+          background-image: url('../../../../assets/images/TimeFem.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          margin: 0; /* Remove margens */
+     }
+
+     .marginBottom-1 {
+          margin-bottom: 20px; /* Espaçamento inferior reduzido */
+     }
+
+     .marginBottom-2 {
+          margin-bottom: 10px; /* Espaçamento inferior reduzido */
+     }
+}

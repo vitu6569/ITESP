@@ -1,0 +1,65 @@
+/* =========================
+    BannerS - Main Container
+    ========================= */
+.bannerS {
+     display: flex; /* Layout em linha */
+     align-items: center; /* Centraliza verticalmente */
+     justify-content: center; /* Centraliza horizontalmente */
+     gap: 46px; /* Espaço entre elementos filhos */
+     width: 100%; /* Ocupa toda a largura */
+     padding: 20px 0; /* Espaçamento vertical */
+     height: 805px; /* Altura fixa */
+     margin-bottom: 132px; /* Espaço inferior */
+}
+
+/* =========================
+    BannerS - Conteúdo
+    ========================= */
+.bannerS__content {
+     display: flex; /* Layout flexível */
+     flex-direction: column; /* Elementos em coluna */
+     gap: 24px; /* Espaço entre elementos filhos */
+}
+
+/* =========================
+    BannerS - Título
+    ========================= */
+.bannerS__title {
+     font-size: 96px; /* Tamanho grande para o título */
+     margin: 0; /* Remove margens padrão */
+}
+
+/* =========================
+    BannerS - Descrição
+    ========================= */
+.bannerS__description {
+     margin-bottom: 57px; /* Espaço inferior */
+     margin: 0; /* Remove margens padrão */
+}
+
+/* =========================
+    Responsividade (até 768px)
+    ========================= */
+@media screen and (max-width: 768px) {
+     .bannerS {
+          margin-top: 144px; /* Espaço superior extra */
+          flex-direction: column-reverse; /* Inverte ordem dos elementos */
+          align-items: center; /* Centraliza itens */
+          height: auto; /* Altura automática */
+          margin-bottom: 50px; /* Reduz espaço inferior */
+     }
+
+     .bannerS__content {
+          padding: 0 20px; /* Espaçamento lateral */
+          align-items: start; /* Alinha à esquerda */
+          text-align: start; /* Texto à esquerda */
+     }
+
+     .bannerS__title {
+          width: 281px; /* Largura fixa para o título */
+     }
+
+     .bannerS__description {
+          margin-bottom: 24px; /* Espaço inferior reduzido */
+     }
+}

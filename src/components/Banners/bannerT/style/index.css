@@ -1,0 +1,92 @@
+/* =========================
+    BannerT Component Styles
+    ========================= */
+
+/* Container for the banner */
+.bannerT {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 52px; /* Space between image and content */
+     height: 540px;
+     margin-bottom: 128px;
+}
+
+/* Banner image styling */
+.bannerT__image {
+     width: 640px;
+     height: 420px;
+     border-top-left-radius: 40px;
+     border-bottom-right-radius: 40px;
+     background-image: url('../../../../src/assets/images/impactoImg.png');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+}
+
+/* Content container (title + description) */
+.bannerT__content {
+     display: flex;
+     width: 100%;
+     flex-direction: column;
+     gap: 40px; /* Space between title and description */
+}
+
+/* Banner title styling */
+.bannerT__title {
+     display: flex;
+     flex-direction: column;
+     font-size: 64px;
+     font-weight: bold;
+}
+
+/* Banner description styling */
+.bannerT__description {
+     width: 500px;
+}
+
+/* Utility classes for margin bottom spacing */
+.marginBottom-1 {
+     margin-bottom: 38px;
+}
+.marginBottom-2 {
+     margin-bottom: 21px;
+}
+
+/* =========================
+    Responsive Styles (<=768px)
+    ========================= */
+@media screen and (max-width: 768px) {
+     .bannerT {
+          flex-direction: column; /* Stack image and content vertically */
+          height: auto;
+          padding: 0 20px 20px;
+     }
+
+     .bannerT__image {
+          width: 800px; /* Adjusted width for mobile */
+          height: 285px;
+          border-top-left-radius: 0;
+          border-bottom-right-radius: 0;
+          /* Background image properties repeated for clarity */
+          background-image: url('../../../../src/assets/images/impactoImg.png');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          margin: 0;
+     }
+
+     .bannerT__content {
+          align-items: start;
+          text-align: start;
+     }
+
+     .bannerT__title {
+          margin: 0;
+     }
+
+     .bannerT__description {
+          margin: 0 20px 0 0;
+          width: 300px; /* Reduced width for smaller screens */
+     }
+}

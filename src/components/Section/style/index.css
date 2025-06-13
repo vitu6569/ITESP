@@ -1,0 +1,189 @@
+/* =========================
+    Project Title Section
+    ========================= */
+.project__title {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     gap: 98px;
+}
+
+.project__title__text {
+     display: flex;
+     flex-direction: column;
+     text-align: right;
+     font-size: 64px;
+}
+
+.project__title__line {
+     display: flex;
+     flex-direction: column;
+}
+
+/* =========================
+    Cards Section
+    ========================= */
+.cards__container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 24px;
+}
+
+.cards__banner {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 52px;
+     width: 100%;
+     height: 540px;
+     margin-top: 90px;
+     background: linear-gradient(to left, #1c1c1c, #111111);
+}
+
+/* Banner image for project */
+.image__project__banner {
+     width: 640px;
+     height: 420px;
+     border-top-left-radius: 40px;
+     border-bottom-right-radius: 40px;
+     background-image: url('../../../assets/images/TimeFem.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+/* =========================
+    Section Project Details
+    ========================= */
+.section__project__title {
+     display: flex;
+     flex-direction: column;
+     align-items: start;
+     justify-content: center;
+}
+
+.section__project__text {
+     width: 500px;
+}
+
+.section__project__content {
+     flex: 1;
+     padding-left: 20px;
+     display: flex;
+     flex-direction: column;
+}
+
+/* =========================
+    Cards Row and Card Styles
+    ========================= */
+.cards-row {
+     display: flex;
+     gap: 21px;
+     flex-wrap: wrap;
+     justify-content: center;
+}
+
+.custom-card {
+     width: 100%;
+     max-width: 383px;
+     height: 484px;
+     background-color: #F5F5F5;
+     border-top-left-radius: 40px;
+     overflow: hidden;
+     color: #000;
+     display: flex;
+     flex-direction: column;
+     padding-bottom: 16px;
+}
+
+.custom-card-image {
+     width: 100%;
+     height: 40%;
+     object-fit: cover;
+}
+
+/* =========================
+    Card Description
+    ========================= */
+.description {
+     padding: 16px;
+}
+
+.description-card {
+     margin-bottom: 16px;
+}
+
+/* =========================
+    Responsive Styles
+    ========================= */
+@media screen and (max-width: 768px) {
+     /* Project Title Section */
+     .project__title {
+          flex-direction: column;
+          justify-content: center;
+          gap: 0px;
+     }
+
+     .project__title__line {
+          margin-bottom: 24px;
+     }
+
+     .project__title__text {
+          text-align: end;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          font-size: 64px;
+     }
+
+     /* Card Description */
+     .description {
+          width: 316px;
+     }
+
+     /* Cards Row and Card Styles */
+     .cards-row {
+          flex-direction: column;
+          align-items: center;
+     }
+
+     .custom-card {
+          width: 100%;
+          max-width: 100%;
+     }
+
+     /* Cards Banner */
+     .cards__banner {
+          display: flex;
+          flex-direction: column;
+          height: auto;
+          padding: 0 20px 20px;
+          background: linear-gradient(to bottom, #1c1c1c, #111111);
+     }
+
+     /* Banner image for project */
+     .image__project__banner {
+          width: 800px;
+          height: 285px;
+          border-top-left-radius: 0px;
+          border-bottom-right-radius: 0px;
+          background-image: url('../../../assets/images/TimeFem.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          margin: 0;
+     }
+
+     /* Section Project Details */
+     .section__project__title {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          justify-content: center;
+     }
+
+     .section__project__text {
+          width: 300px;
+     }
+}

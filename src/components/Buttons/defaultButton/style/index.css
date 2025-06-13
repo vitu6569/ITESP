@@ -1,0 +1,31 @@
+.hero__button__Default {
+    width: 156px;
+    height: 42px;
+    border-radius: 20px;
+    border: 0 transparent;
+    background-color: #FFFFFF;
+}
+
+.hero__button__Yellow {
+    width: 156px;
+    height: 42px;
+    border-radius: 20px;
+    border: 0 transparent;
+    background-color: #FFD700;
+}
+
+.hero__button__LightGray {
+    width: 156px;
+    height: 42px;
+    border-radius: 20px;
+    border: 0 transparent;
+    background-color: #F5F5F5;
+}
+
+.hero__button__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap: 4px;
+}
