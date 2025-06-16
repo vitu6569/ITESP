@@ -3,13 +3,14 @@ import Footer from "./components/Footer"
 
 import Main from "./pages/main"
 import About from "./pages/about/about"
+import AccountAbility from "./pages/accountability"
+import NotFound from "./pages/NotFound" // Crie esse componente
 
 import { BrowserRouter, Route, Routes } from "react-router"
 
 import "./style/index.css"
 
 function App() {
-
   return (
     <div style={{ maxWidth: "100%", alignItems: "center", justifyContent: "center" }}>
       <div style={{ position: "sticky", top: 0, zIndex: 1000 }}>
@@ -19,6 +20,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/about" element={<About />} />
+          <Route path="/AccountAbility" element={<AccountAbility />} />
+          <Route path="*" element={<NotFound />} /> {/* Rota para páginas não encontradas */}
         </Routes>
       </BrowserRouter>
       <Footer />

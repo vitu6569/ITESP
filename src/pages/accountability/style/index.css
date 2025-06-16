@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+}
+
+.containerAccountAbility {
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 53px;
+    align-items: start;
+    margin-top: 135px;
+}
+
+.contentAccountAbility {
+    display: flex;
+    gap: 21px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.titleContent {
+    font-size: 128px;
+}
+ul {
+    margin: 0;
+    padding-left: 0px;
+    list-style: none;
+}
+.listChildren {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+
+}
+.circle {
+    width: 6px;
+    height: 6px;
+    background-color: #212121;
+    border-radius: 88px;
+}
+.linkPDF {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .titleContent {
+        padding: 16px;
+        font-size: 86px;
+    }
+}

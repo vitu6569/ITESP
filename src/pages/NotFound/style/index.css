@@ -1,0 +1,24 @@
+.NotFound {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-block: 15%;
+}
+.errorCode {
+    font-size: 128px;
+}
+.PageNotFound {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .NotFound {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+        margin-block: 50%;
+    }
+}

@@ -108,6 +108,7 @@
     Card Description
     ========================= */
 .description {
+     max-width: 610px;
      padding: 16px;
 }
 
