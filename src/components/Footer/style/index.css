@@ -128,7 +128,21 @@
 .newsTitle {
    margin-bottom: 27px;
 }
-
+.input-container {
+    display: flex;
+    border: 1px solid #A6A6A6;
+    border-radius: 80px;
+    max-width: 470px;
+}
+.input-field {
+    color: #ffffff;
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+}
 /* =========================
   Checkbox customizado
   ========================= */
