@@ -5,8 +5,8 @@ const About = () => {
     return (
         <div className="containerAbout">
             <div className="content">
-                <h1 className="titleContent preto">Sobre o Instituto</h1>
-                <p className="textContent text preto">
+                <h1 className="titleContent charcoal">Sobre o Instituto</h1>
+                <p className="textContent text charcoal">
                     <span>
                         O Instituto Talentos Esportivos São Pedro (ITESP) nasceu em 2017, no coração do bairro São Pedro, em Vitória/ES, como resposta a um pedido da própria comunidade. A inspiração veio da força e do exemplo da equipe feminina do São Pedro Beach Soccer, que já se destacava na região. A partir daí, surgiu um projeto maior, com o objetivo claro: usar o esporte como ferramenta de transformação social.
                     </span>

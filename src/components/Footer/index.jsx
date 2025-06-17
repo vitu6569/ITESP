@@ -70,9 +70,8 @@ const Footer = () => {
                     <h1 className="title subtitleFont">Instituto</h1>
                     <div className="Instituto">
                         <a href="About" target="_self" className="sobreFooter branco labelFonte">Sobre o instituto</a>
-                        <a href="team" target="_self" className="sobreFooter branco labelFonte">Nossa equipe</a>
-                        <a href="project" target="_self" className="sobreFooter branco labelFonte">Projetos</a>
-                        <a href="works" target="_self" className="sobreFooter branco labelFonte">Atuação</a>
+                        <a href="impact" target="_self" className="sobreFooter branco labelFonte">Nosso impacto</a>
+                        <a href="act" target="_self" className="sobreFooter branco labelFonte">Atuação</a>
                     </div>
                 </div>
             </div>

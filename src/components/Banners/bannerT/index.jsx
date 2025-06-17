@@ -30,7 +30,7 @@ const BannerT = () => {
                     </p>
                 </div>
                 {/* Botão de ação */}
-                <DefaultButton title="Saiba mais" style="Default" />
+                <DefaultButton title="Nosso Impacto" link="/impact" style="Default" />
             </div>
         </div>
     );

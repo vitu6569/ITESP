@@ -20,7 +20,7 @@ const BannerS = () => {
                     cidadania e oportunidades.
                 </p>
                 {/* Botão de ação */}
-                <DefaultButton title="Como Atuamos" style='Yellow' />
+                <DefaultButton title="Como Atuamos" link="/act" style='Yellow' />
             </div>
             {/* Imagem ilustrativa do banner */}
             <div>

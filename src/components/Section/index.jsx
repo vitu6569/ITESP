@@ -17,7 +17,7 @@ const SectionProject = () => {
                         beach soccer como ferramenta para desenvolver valores, promover cidadania e impulsionar o potencial de cada jovem atendido.
                     </p>
                     {/* Botão para saber mais sobre os projetos */}
-                    <DefaultButton title="Saiba mais" style="Yellow" />
+                    <DefaultButton title="Saiba mais" link="/projects" style="Yellow" />
                 </div>
             </div>
 

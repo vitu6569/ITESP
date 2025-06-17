@@ -32,7 +32,7 @@ const BannerF = () => {
                 {/* Botão de ação */}
                 <DefaultButton
                     title="Sobre o instituto"
-                    link="" // Defina o link de destino aqui
+                    link="/about" // Defina o link de destino aqui
                     color="DefaultButton"
                 />
             </div>

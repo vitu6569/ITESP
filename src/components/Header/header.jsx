@@ -17,13 +17,18 @@ const menuItems = [
     label: "SOBRE",
     links: [
       { name: "Sobre o Instituto", path: "about" },
+      /*
       { name: "Nossa equipe", path: "team" },
       { name: "Parceiros", path: "annual-report" },
       { name: "Financiadores", path: "annual-report" },
       { name: "Relátorio Anual", path: "annual-report" },
+      */
       { name: "Prestação de Contas", path: "accountability" },
+      { name: "Como Atuamos", path: "act" },
+      {name: "Nosso Impacto", path: "impact"},
     ]
   },
+  /*
   {
     label: "TEMAS",
     links: [
@@ -32,6 +37,7 @@ const menuItems = [
       { name: "Materia 3", path: "tema-3" },
     ]
   },
+  */
 ];
 
 // Header component

@@ -13,7 +13,6 @@ const Main = () => {
             <BannerF />
             <BannerS />
             <BannerT />
-            <SectionProject />
         </div>
     )
 }

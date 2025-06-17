@@ -9,6 +9,9 @@ import NotFound from "./pages/NotFound" // Crie esse componente
 import { BrowserRouter, Route, Routes } from "react-router"
 
 import "./style/index.css"
+import HowToAct from "./pages/act"
+import OurImpact from "./pages/impact"
+import SectionProject from "./components/Section"
 
 function App() {
   return (
@@ -21,6 +24,8 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/about" element={<About />} />
           <Route path="/AccountAbility" element={<AccountAbility />} />
+          <Route path="/Act" element={<HowToAct />} />
+          <Route path="/impact" element={<OurImpact />} />
           <Route path="*" element={<NotFound />} /> {/* Rota para páginas não encontradas */}
         </Routes>
       </BrowserRouter>
