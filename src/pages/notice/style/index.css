@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+}
+
+.containerNotice{
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 53px;
+    align-items: start;
+    margin-top: 135px;
+}
+
+.titleContent {
+    font-size: 128px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .titleContent {
+        padding: 16px;
+        font-size: 86px;
+    }
+}

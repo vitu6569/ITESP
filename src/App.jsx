@@ -4,6 +4,7 @@ import Footer from "./components/Footer"
 import Main from "./pages/main"
 import About from "./pages/about/about"
 import AccountAbility from "./pages/accountability"
+import Notice from "./pages/notice/index"
 import NotFound from "./pages/NotFound" // Crie esse componente
 
 import { BrowserRouter, Route, Routes } from "react-router"
@@ -26,6 +27,7 @@ function App() {
           <Route path="/AccountAbility" element={<AccountAbility />} />
           <Route path="/Act" element={<HowToAct />} />
           <Route path="/impact" element={<OurImpact />} />
+          <Route path="/notice" element={<Notice />} />
           <Route path="*" element={<NotFound />} /> {/* Rota para páginas não encontradas */}
         </Routes>
       </BrowserRouter>

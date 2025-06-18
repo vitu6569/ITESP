@@ -125,7 +125,7 @@ const Header = () => {
                     </li>
                   ))}
                   {/* Additional static menu items */}
-                  <li className="textMenu"><a href="/publicacoes">PUBLICAÇÕES</a></li>
+                  <li className="textMenu"><a href="/notice">NOTÍCIAS</a></li>
                   <li className="textMenu"><a href="/quero-apoiar">QUERO APOIAR</a></li>
                 </ul>
               </nav>
@@ -151,7 +151,7 @@ const Header = () => {
             ))}
             {/* Additional static menu items */}
             <li className="apoiar">
-              <a href="/publicacoes" className="textMenu">PUBLICAÇÕES</a>
+              <a href="/notice" className="textMenu">NOTÍCIAS</a>
               <a href="/quero-apoiar" className="textMenu">QUERO APOIAR</a>
             </li>
           </nav>
