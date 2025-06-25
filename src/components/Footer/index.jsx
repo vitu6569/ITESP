@@ -85,21 +85,15 @@ const Footer = () => {
           <div className="Contact">
             <div className="emailAndNumber">
               <a href="mailto:contato@itesp.org.br" className="emailLink branco labelFonte">
-                contato@itesp.org.br
+                instituto.itesp@gmail.com
               </a>
               <a href="tel:+5583999999999" className="numberLink branco labelFonte">
-                +55 83 99999-9999
+                +55 27 99962-5618
               </a>
             </div>
             <div className="socialMedia">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/instituto.itesp" target="_blank" rel="noopener noreferrer">
                 <img src="src/assets/icons/instagram.png" alt="Instagram" className="socialMediaIcon" />
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src="src/assets/icons/twitter.png" alt="Twitter" className="socialMediaIcon" />
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src="src/assets/icons/facebook.png" alt="Facebook" className="socialMediaIcon" />
               </a>
             </div>
           </div>

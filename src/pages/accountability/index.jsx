@@ -1,54 +1,39 @@
+import React, { useEffect, useState } from "react";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../../firebase/firebase";
+
 import "./style/index.css"
 import "../../style/index.css"
 
-
-const data = [
-    {
-        id: 1,
-        year: "2025",
-        AccountAbilityPDF: [
-            { path: "link" }
-        ]
-    },
-    {
-        id: 2,
-        year: "2024",
-        AccountAbilityPDF: [
-            { path: "link" }
-        ]
-    },
-    {
-        id: 3,
-        year: "2023",
-        AccountAbilityPDF: [
-            { path: "link" }
-        ]
-    },
-    {
-        id: 4,
-        year: "2022",
-        AccountAbilityPDF: [
-            { path: "link" }
-        ]
-    },
-]
-
 const AccountAbility = () => {
+  const [AccountAbility, setAccountAbility] = useState([]);
+  useEffect(() => {
+    const fetchAccountAbility = async () => {
+      try {
+        const snapshot = await getDocs(collection(db, "AccountAbility"));
+        const dados = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        setAccountAbility(dados);
+      } catch (error) {
+        console.error("❌ Erro ao buscar AccountAbility:", error);
+      }
+    };
+
+    fetchAccountAbility();
+  }, []);
+
     return (
         <div className="containerAccountAbility">
             <div className="content">
                 <h1 className="titleContent h1">Prestação de Contas</h1>
                 <div className="contentAccountAbility">
-                    {data.map((item) => (
-                        <div key={item.id}>
-                            <h1 className="yearTitle">{item.year}</h1>
+                    {AccountAbility.map((AccountAbility) => (
+                        <div key={AccountAbility.id}>
+                            <h1 className="yearTitle">{AccountAbility.year}</h1>
                             <ul className="list">
-                                {item.AccountAbilityPDF.map((link, i) => (
-                                    <li key={i} className="listChildren">
+                                    <li className="listChildren">
                                         <div className="circle"></div>
-                                        <a className="linkPDF charcoal subtitleFont" target="_blank" href={link.path}>Prestação de Contas</a>
+                                        <a className="linkPDF charcoal subtitleFont" target="_blank" href={AccountAbility.AccountAbilityPDF}>Prestação de Contas</a>
                                     </li>
-                                ))}
                             </ul>
                         </div>
                     ))}

@@ -11,7 +11,6 @@ const NoticiasMock = () => {
       try {
         const snapshot = await getDocs(collection(db, "noticias"));
         const dados = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-        console.log("🔥 Dados do Firestore:", dados); // <--- Aqui o teste
         setNoticias(dados);
       } catch (error) {
         console.error("❌ Erro ao buscar notícias:", error);
@@ -26,16 +25,15 @@ const NoticiasMock = () => {
       <div className="noticias-lista">
         {noticias.map((noticias) => (
           <a
-            href="https://eshoje.com.br/esportes/2024/09/sao-pedro-conquista-o-mundial-de-clubes-de-beach-soccer-feminino/"
+            href= {noticias.link} 
             target="_blank"
-            key={noticias}
+            key={noticias.id}
             className="noticia-card"
           >
             <img
-              src={noticias.imagemURL || "https://picsum.photos/600/400"}
+              src={noticias.ImagemURL}
               alt={noticias.titulo}
-              width={600}
-              height={400}
+              className="noticia-img"
             />
             <div className="noticia-conteudo">
               <h3>{noticias.titulo}</h3>
